@@ -39,7 +39,7 @@
   background-color: var(--box-color);
   border-radius: 10px;
 }
-#image {
+#image ,#image1 ,#image2, #image3, #image4, #image5{
   width: 307px;
   height: 150px;
   box-shadow: 1px 2px 8px black;
