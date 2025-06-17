@@ -3,13 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StudentHub - </title>
+    <title>StudentHub - Resources</title>
+
+    <!-- Google Fonts -->
     <link
+      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
     />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../assets/styles/nav_footer.css" />
+    <link rel="stylesheet" href="../assets/styles/resources.css" />
   </head>
+
   <body>
+    <!-------HEADER-------->
     <header>
       <div class="logo">StudentHub</div>
 
@@ -29,32 +37,592 @@
       </form>
 
       <nav>
-        <a href="/index.html">Home</a>
-        <a href= "resources.html" class="active">Resources</a>
+        <a href="../index.html">Home</a>
+        <a href="resources.html" class="active">Resources</a>
         <a href="./events.html">Events</a>
         <a href="./mentorship.html">Mentorship</a>
       </nav>
+
       <div class="auth-buttons">
         <button class="login-btn">Log in</button>
         <button class="signup-btn">Sign up</button>
       </div>
     </header>
-<!-- code here  -->
- <!--this is where you'll put the body of your code --->
+
+    <!-------RESOURCE SECTION-------->
+    <main class="resources-section">
+      <h1>Learning Resources</h1>
+      <p>
+        Everything you need to learn, grow, and succeed. From coding tutorials
+        to design masterclasses.
+      </p>
+      <!-- FILTER BAR: category buttons + level dropdown -->
+      <div class="filter-bar">
+        <!-------CATEGORY FILTERS-------->
+        <div class="filter-buttons">
+          <button data-filter="design">design</button>
+          <button data-filter="Productivity">Productivity</button>
+          <button data-filter="Coding">Coding</button>
+          <button data-filter="Business">Business</button>
+          <button data-filter="Language">Language</button>
+        </div>
+
+        <!-- <-------LEVEL FILTER DROPDOWN------->
+
+        <select id="levelFilter" class="level-filter">
+          <option value="all">All Levels</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+
+      <!-------RESOURCE CARDS GRID-------->
+      <div class="card-grid">
+        <!-- RESOURCE CARD: Productivity Mastery -->
+
+        <!-- PRODUCTIVITY CARD 1 -->
+        <div class="card" data-category="productivity" data-level="beginner">
+          <img
+            src="../images/resourses.jpg/Resource Page/productivity 1.jpg"
+            alt="Time Management"
+          />
+          <div class="card-body">
+            <h3>Mastering Time Management</h3>
+            <p>
+              Learn powerful techniques to prioritize tasks, avoid
+              procrastination, and manage your time like a pro.
+            </p>
+            <span class="badge beginner">Beginner</span>
+            <a href="../YTcourses/masteringTM.html" class="start-btn"
+              >Start learning</a
+            >
+          </div>
+        </div>
+
+        <!-- PRODUCTIVITY CARD 2 -->
+        <div
+          class="card"
+          data-category="productivity"
+          data-level="intermediate"
+        >
+          <img
+            src="../images/resourses.jpg/Resource Page/productivity 2.jpg"
+            alt="Productivity Tools"
+          />
+          <div class="card-body">
+            <h3>Productivity Tools 101</h3>
+            <p>
+              Explore top digital tools (Notion, Trello, Calendly) that can help
+              you organize work and study smarter.
+            </p>
+            <span class="badge intermediate">Intermediate</span>
+            <a href="../YTcourses/productivity101.html" class="start-btn"
+              >Start learning</a
+            >
+          </div>
+        </div>
+
+        <!-- PRODUCTIVITY CARD 3 -->
+        <div class="card" data-category="productivity" data-level="beginner">
+          <img
+            src="../images/resourses.jpg/Resource Page/productivity3.jpg"
+            alt="Habits and Focus"
+          />
+          <div class="card-body">
+            <h3>Building Productive Habits</h3>
+            <p>
+              Discover how small daily habits can transform your productivity
+              and energy levels.
+            </p>
+            <span class="badge beginner">Beginner</span>
+            <a href="../YTcourses/BPH.html" class="start-btn">Start learning</a>
+          </div>
+        </div>
+
+        <!-- PRODUCTIVITY CARD 4 -->
+        <div class="card" data-category="productivity" data-level="advanced">
+          <img
+            src="../images/resourses.jpg/Resource Page/productivity 4.jpg"
+            alt="Deep Work"
+          />
+          <div class="card-body">
+            <h3>Deep Work & Focus</h3>
+            <p>
+              Learn how to enter flow state and do high-quality work without
+              distractions, inspired by Cal Newport’s Deep Work.
+            </p>
+            <span class="badge advanced">Advanced</span>
+            <a href="../YTcourses/DWF.html" class="start-btn">Start learning</a>
+          </div>
+        </div>
+
+        <!-- PRODUCTIVITY CARD 5 -->
+        <div
+          class="card"
+          data-category="productivity"
+          data-level="intermediate"
+        >
+          <img
+            src="../images/resourses.jpg/Resource Page/productivity 5.jpg"
+            alt="Goal Setting"
+          />
+          <div class="card-body">
+            <h3>Goal Setting & Execution</h3>
+            <p>
+              Set SMART goals and create action plans to achieve personal,
+              academic, or career success.
+            </p>
+            <span class="badge intermediate">Intermediate</span>
+            <a href="../YTcourses/GSE.html" class="start-btn">Start learning</a>
+          </div>
+        </div>
+
+        <div class="card" data-category="productivity" data-level="advanced">
+          <img
+            src="../images/resourses.jpg/Resource Page/productivity5.jpg"
+            alt="Productivity"
+          />
+          <div class="card-body">
+            <h3>Productivity Mastery</h3>
+            <p>
+              Boost your time management and focus with expert strategies....
+            </p>
+            <span class="badge advanced">Advanced</span>
+            <a href="../YTcourses/PM.html" class="start-btn">Start learning</a>
+          </div>
+        </div>
+
+        <!-- LANGUAGE CARD 1 -->
+        <div class="card" data-category="language" data-level="beginner">
+          <img src="../images/resourses.jpg/Resource Page/language 4.jpg" alt="Basic English" />
+          <div class="card-body">
+            <h3>Basic English Communication</h3>
+            <p>
+              Build confidence in speaking, listening, and everyday conversation
+              skills for school and work.
+            </p>
+            <span class="badge beginner">Beginner</span>
+            <a href="../YTcourses/BEC.html" class="start-btn">Start learning</a>
+          </div>
+        </div>
+
+        <!-- LANGUAGE CARD 2 -->
+        <div class="card" data-category="language" data-level="beginner">
+          <img src="../images/resourses.jpg/Resource Page/language2.jpg" alt="Duolingo Hacks" />
+          <div class="card-body">
+            <h3>Duolingo Hacks for Fast Learning</h3>
+            <p>
+              Learn smart strategies to make the most of Duolingo and build
+              vocabulary faster in any language.
+            </p>
+            <span class="badge beginner">Beginner</span>
+            <a href="../YTcourses/duo.html" class="start-btn">Start learning</a>
+          </div>
+        </div>
+
+        <!-- LANGUAGE CARD 3 -->
+        <div class="card" data-category="language" data-level="Beginner">
+          <img src="../images/resourses.jpg/Resource Page/language 1.jpg" alt="French Basics" />
+          <div class="card-body">
+            <h3>French for Beginners</h3>
+            <p>
+              Start your French journey with basic grammar, pronunciation tips,
+              and useful phrases for travel or school.
+            </p>
+            <span class="badge beginner">Beginner</span>
+            <a href="../YTcourses/ffb.html" class="start-btn">Start learning</a>
+          </div>
+        </div>
+
+        <!-- LANGUAGE CARD 4 -->
+        <div class="card" data-category="language" data-level="Intermediate">
+          <img
+            src="../images/resourses.jpg/Resource Page/language 5.jpg"
+            alt="Language Immersion"
+          />
+          <div class="card-body">
+            <h3>Language Immersion Techniques</h3>
+            <p>
+              Discover creative ways to immerse yourself in any language through
+              music, movies, books, and daily routines.
+            </p>
+            <span class="badge intermediate">Intermediate</span>
+            <a href="../YTcourses/lit.html" class="start-btn">Start learning</a>
+          </div>
+        </div>
+
+        <!-- LANGUAGE CARD 5 -->
+        <div class="card" data-category="language" data-level="advanced">
+          <img
+            src="../images/resourses.jpg/Resource Page/language5.jpg"
+            alt="Multilingual Mastery"
+          />
+          <div class="card-body">
+            <h3>Tips for Learning Multiple Languages</h3>
+            <p>
+              Find out how to balance and retain vocabulary, grammar, and
+              speaking skills across multiple languages at once.
+            </p>
+            <span class="badge advanced">Advanced</span>
+            <a href="../YTcourses/MM.html" class="start-btn">Start learning</a>
+          </div>
+        </div>
+
+        <!-- RESOURCE CARD: coding -->
+
+        <!-- RESOURCE CARD:game dev-->
+        <div class="card" data-category="coding" data-level="intermediate">
+          <img
+            src="../images/resourses.jpg/Resource Page/gamedev.jpg"
+            alt="Game Development"
+          />
+          <div class="card-body">
+            <h3>Game Development</h3>
+            <p>
+              Learn how to launch and grow your own startup from scratch.....
+            </p>
+            <span class="badge intermediate">Intermediate</span>
+            <a href="../YTcourses/gamdev.html" class="start-btn"
+              >Start learning</a
+            >
+          </div>
+        </div>
+
+        <!-- RESOURCE CARD: Devops & Cloud-->
+        <div class="card" data-category="coding" data-level="intermediate">
+          <img src="../images/resourses.jpg/Resource Page/devopscloud.jpg" alt="Devops & Cloud" />
+          <div class="card-body">
+            <h3>Devops & Cloud</h3>
+            <p>Learn containerization, CI/CD pipelines, AWS, Azure......</p>
+            <span class="badge intermediate">Intermediate</span>
+
+            <a href="../YTcourses/devops.html" class="start-btn"
+              >Start learning</a
+            >
+          </div>
+        </div>
+
+        <!-- RESOURCE CARD: Python for Data Science-->
+        <div class="card" data-category="coding" data-level="beginner">
+          <img src="../images/resourses.jpg/Resource Page/pythonfordatascience.jpg" alt="Data science" />
+          <div class="card-body">
+            <h3>Python for Data Science</h3>
+            <p>
+              Understand user behavior and design seamless digital
+              experiences....
+            </p>
+            <span class="badge beginner">Beginner</span>
+            <a href="../YTcourses/devops.html" class="start-btn"
+              >Start learning</a
+            >
+          </div>
+        </div>
+
+        <!-- RESOURCE CARD: Cybersecurity -->
+        <div class="card" data-category="coding" data-level="intermediate">
+          <img
+            src="../images/resourses.jpg/Resource Page/cybersecurity.jpg"
+            alt="Devops & Cloud"
+          />
+          <div class="card-body">
+            <h3>Cybersecurity</h3>
+            <p>Understand ethical hacking, network security, cryptography...</p>
+            <span class="badge intermediate">Intermediate</span>
+            <a href="../YTcourses/cybersecurity.html" class="start-btn"
+              >Start learning</a
+            >
+          </div>
+        </div>
+
+        <!-- RESOURCE CARD: React.js Development Guide -->
+        <div class="card" data-category="coding" data-level="intermediate">
+          <img
+            src="../images/resourses.jpg/Resource Page/RJS.jpg"
+            alt="React.js Development Guide "
+          />
+          <div class="card-body">
+            <h3>React.js Development Guide</h3>
+            <p>
+              Comprehensive guide to building modern web applications with.....
+            </p>
+            <span class="badge intermediate">Intermediate</span>
+             <a href="../YTcourses/RJS.html" class="start-btn"
+              >Start learning</a
+            >
+          </div>
+        </div>
+
+        <!-- RESOURCE CARD: Web Development -->
+        <div class="card" data-category="coding" data-level="beginner">
+          <img
+            src="../images/resourses.jpg/Resource Page/web-dev.jpg"
+            alt="Web Development"
+          />
+          <div class="card-body">
+            <h3>Web Development</h3>
+            <p>Master HTML, CSS, JavaScript, and build stunning websites...</p>
+            <span class="badge beginner">Beginner</span>
+             <a href="../YTcourses/webdev.html" class="start-btn"
+              >Start learning</a
+            >
+          </div>
+        </div>
+
+        <!-- RESOURCE CARD: Blockchain development -->
+        <div class="card" data-category="coding" data-level="beginner">
+          <img
+            src="../images/resourses.jpg/Resource Page/blockchain.jpg"
+            alt="Blockchain Development"
+          />
+          <div class="card-body">
+            <h3>Blockchain Development</h3>
+            <p>
+              Build decentralized applications, smart contracts, explore
+              Web3....
+            </p>
+            <span class="badge beginner">Beginner</span>
+             <a href="../YTcourses/blockchain.html" class="start-btn"
+              >Start learning</a>
+          </div>
+        </div>
+
+        <!-- RESOURCE CARD: Data Science -->
+        <div class="card" data-category="coding" data-level="beginner">
+          <img
+            src="../images/resourses.jpg/Resource Page/datascience.jpg"
+            alt="Data Science "
+          />
+          <div class="card-body">
+            <h3>Data Science</h3>
+            <p>Analyze data, build machine learning models, and extract...</p>
+            <span class="badge beginner">Beginner</span>
+          <a href="../YTcourses/datasci.html" class="start-btn"
+              >Start learning</a>
+          </div>
+        </div>
+
+        <!-- RESOURCE CARD: DevOps& Cloud Computing  -->
+        <div class="card" data-category="coding" data-level="beginner">
+          <img src="../images/resourses.jpg/Resource Page/devopscloud.jpg" alt="Data Science " />
+          <div class="card-body">
+            <h3>DevOps& Cloud Computing</h3>
+            <p>Learn containerization, CI/CD pipelines, AWS, Azure...</p>
+            <span class="badge beginner">Beginner</span>
+              <a href="../YTcourses/DCC.html" class="start-btn"
+              >Start learning</a>
+          </div>
+        </div>
+
+        
+
+        <!-- <-------BUSINESS COURSE CARDS------->
+
+        <!-- BUSINESS CARD 1 -->
+        <div class="card" data-category="business" data-level="beginner">
+          <img
+            src="../images/resourses.jpg/Resource Page/business 2.jpg"
+            alt="Entrepreneurship"
+          />
+          <div class="card-body">
+            <h3>Business Strategy</h3>
+            <p>
+              turn ideas into successful businesses through strategy, planning,
+              and growth models.
+            </p>
+            <span class="badge beginner">Beginner</span>
+           <a href="../YTcourses/bs.html" class="start-btn"
+              >Start learning</a>
+          </div>
+        </div>
+
+        <!-- BUSINESS CARD 2 -->
+        <div class="card" data-category="business" data-level="beginner">
+          <img src="../images/resourses.jpg/Resource Page/business 3.jpg" alt="Marketing" />
+          <div class="card-body">
+            <h3>Marketing Fundamentals</h3>
+            <p>
+              Understand how to market products and services, reach your
+              audience, and build brand identity.
+            </p>
+            <span class="badge intermediate">Intermediate</span>
+                <a href="../YTcourses/marketing.html" class="start-btn"
+              >Start learning</a>
+          </div>
+        </div>
+
+        <!-- BUSINESS CARD 3 -->
+        <div class="card" data-category="business" data-level="beginner">
+          <img
+            src="../images/resourses.jpg/Resource Page/business 4.jpg"
+            alt="Startup Finance"
+          />
+          <div class="card-body">
+            <h3>Startup Finance 101</h3>
+            <p>
+              Master budgeting, funding, and financial modeling to sustain and
+              grow your startup.
+            </p>
+            <span class="badge beginner">Beginner</span>
+                <a href="../YTcourses/startup.html" class="start-btn"
+              >Start learning</a>
+          </div>
+        </div>
+
+
+
+        <!-- BUSINESS CARD 5 -->
+        <div class="card" data-category="business" data-level="Advanced">
+          <img
+            src="../images/resourses.jpg/Resource Page/busniess 5.jpg"
+            alt="Digital Business"
+          />
+          <div class="card-body">
+            <h3>Digital Business Models</h3>
+            <p>
+              Explore modern business models using technology and platforms for
+              global growth.
+            </p>
+            <span class="badge advanced">Advanced</span>
+             <a href="../YTcourses/digitalM.html" class="start-btn"
+              >Start learning</a>
+          </div>
+        </div>
+        <!-- BUSINESS CARD  -->
+        <div class="card" data-category="business">
+          <img
+            src="../images/resourses.jpg/Resource Page/business 6.jpg"
+            alt="Business Strategy Course"
+          />
+          <div class="card-body">
+            <h3>Entrepreneurship & Business Strategy</h3>
+            <p>
+              Learn how to turn ideas into successful businesses through
+              strategy, planning, and growth models.
+            </p>
+            <span class="badge beginner">Beginner</span>
+            <a href="../YTcourses/EBS.html" class="start-btn"
+              >Start learning</a>
+          </div>
+        </div>
+        <!-- DESIGN CARD 1 -->
+        <div class="card" data-category="design" data-level="beginner">
+          <img
+            src="../images/resourses.jpg/Resource Page/graphicdesign.jpg"
+            alt="Graphic Design"
+          />
+          <div class="card-body">
+            <h3>Graphic Design Essentials</h3>
+            <p>
+              Master the fundamentals of visual design, color theory, and
+              digital illustration tools.
+            </p>
+            <span class="badge beginner">Beginner</span>
+              <a href="../YTcourses/graphicsdesign.html" class="start-btn"
+              >Start learning</a>
+          </div>
+        </div>
+
+        <!-- DESIGN CARD 2 -->
+        <div class="card" data-category="design" data-level="intermediate">
+          <img src="../images/resourses.jpg/Resource Page/design7.jpg" alt="UI UX" />
+          <div class="card-body">
+            <h3>UI/UX Design Principles</h3>
+            <p>
+              Learn to design intuitive user interfaces and meaningful user
+              experiences for web and mobile apps.
+            </p>
+            <span class="badge intermediate">Intermediate</span>
+                <a href="../YTcourses/uiux.html" class="start-btn"
+              >Start learning</a>
+          </div>
+        </div>
+
+        <!-- DESIGN CARD 3 -->
+        <div class="card" data-category="design" data-level="intermediate">
+          <img src="../images/resourses.jpg/Resource Page/design3.jpg" alt="Branding" />
+          <div class="card-body">
+            <h3>Branding & Identity Design</h3>
+            <p>
+              Explore how to craft a compelling brand identity that stands out
+              in a competitive market.
+            </p>
+            <span class="badge intermediate">Intermediate</span>
+              <a href="../YTcourses/bid.html" class="start-btn"
+              >Start learning</a>
+          </div>
+        </div>
+
+        <!-- DESIGN CARD 4 -->
+        <div class="card" data-category="design" data-level="advanced">
+          <img
+            src="../images/resourses.jpg/Resource Page/design5.jpg"
+            alt="Motion Graphics"
+          />
+          <div class="card-body">
+            <h3>Motion Graphics Basics</h3>
+            <p>
+              Bring designs to life with motion by learning key animation
+              techniques and tools like After Effects.
+            </p>
+            <span class="badge advanced">Advanced</span>
+               <a href="../YTcourses/MGB.html" class="start-btn"
+              >Start learning</a>
+          </div>
+        </div>
+
+        <!-- DESIGN CARD 5 -->
+        <div class="card" data-category="design" data-level="beginner">
+          <img src="../images/resourses.jpg/Resource Page/design4.jpg" alt="Canva Design" />
+          <div class="card-body">
+            <h3>Design with Canva</h3>
+            <p>
+              Quickly create stunning social media graphics, posters, and
+              presentations using Canva.
+            </p>
+            <span class="badge beginner">Beginner</span>
+              <a href="../YTcourses/dwc.html" class="start-btn"
+              >Start learning</a>
+          </div>
+        </div>
+
+        <!--  Design-card 6  -->
+        <div class="card" data-category="design" data-level="beginner">
+          <img
+            src="../images/resourses.jpg/Resource Page/design7.jpg"
+            alt="Graphics Design"
+          />
+          <div class="card-body">
+            <h3>Advanced Graphics Design</h3>
+            <p>
+              Learn visual communication principles, typography, and digital art
+              tools.....
+            </p>
+            <span class="badge beginner">Beginner</span>
+           <a href="../YTcourses/Agraphicsdesign.html" class="start-btn"
+              >Start learning</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-------FOOTER-------->
     <footer>
       <div class="footer-container">
+        <!-- QUICK LINKS -->
         <div class="footer-row">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="../index.html" >Home</a></li> 
-            <li><a href="resources.html"class="active">Resources</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="resources.html" class="active">Resources</a></li>
             <li><a href="./events.html">Events</a></li>
             <li><a href="./mentorship.html">Mentorship</a></li>
-            <li>About Us</li>
-            <li>Contact Us</li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
 
+        <!-- STUDENT SERVICES -->
         <div class="footer-row">
           <h4>Student Services</h4>
           <ul>
@@ -67,6 +635,7 @@
           </ul>
         </div>
 
+        <!-- NEWSLETTER -->
         <div class="footer-row">
           <div class="footer-column">
             <h4>Stay Updated</h4>
@@ -79,11 +648,12 @@
           </div>
         </div>
 
+        <!-- STORE LINKS -->
         <div class="footer-row">
           <div class="store-buttons">
             <a href="https://apps.apple.com/" target="_blank">
               <img
-                src="../images/Store=App Store, Style=Black.svg "
+                src="../images/Store=App Store, Style=Black.svg"
                 alt="Download on the App Store"
                 class="store-badge"
               />
@@ -99,6 +669,7 @@
           </div>
         </div>
 
+        <!-- SOCIAL ICONS -->
         <div class="social-icons">
           <img
             src="../images/instagram_1409946.png"
@@ -115,11 +686,13 @@
             alt="LinkedIn"
             style="height: 40px"
           />
-          <img src="../images/twitter.png" alt="X" style="height: 40px" />
+          <img src="../images/twitter.png" alt="Twitter" style="height: 40px" />
         </div>
       </div>
+
       <hr />
 
+      <!-- FOOTER BOTTOM -->
       <div class="footer-bottom_container">
         <div class="space-container">
           <div class="footer-brand">
@@ -134,5 +707,6 @@
         </div>
       </div>
     </footer>
-</body>
+    <script src="../assets/js/filter.js"></script>
+  </body>
 </html>
