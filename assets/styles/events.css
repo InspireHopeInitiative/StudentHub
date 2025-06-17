@@ -34,8 +34,8 @@
   color: black !important;
 }
 .my-container {
-  width: 28rem;
-  height: 20rem;
+  width: 30rem;
+  height: 21rem;
   background-color: var(--box-color);
   border-radius: 10px;
 }
@@ -55,11 +55,14 @@
 .card-description {
   color: black;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   margin-left: 20px;
   text-align: left;
-  line-height: 15px;
+  line-height: 18px;
   margin-top: 5px;
+}
+.phy{
+  font-weight: bold;
 }
 .button {
   background-color: var(--primary-color);
@@ -86,6 +89,13 @@
 #left-arrow {
   font-size: 60px;
   margin-left: 6.3rem;
+}
+.arrow-link{
+  color: inherit;
+  text-decoration: none;
+}
+.arrow-link:active{
+  color: inherit;
 }
 #virtual-container {
   background-color: var(--primary-color);
@@ -145,6 +155,7 @@
   line-height: 15px;
   font-size: 14px;
   vertical-align: top;
+  font-weight: 500;
 }
 #location {
   font-size: 28px;
@@ -158,7 +169,8 @@
   height: 2.5rem;
   width: 8rem;
   border-radius: 5px;
-  padding: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-align: center;
   display: block;
   font-size: 18px;
