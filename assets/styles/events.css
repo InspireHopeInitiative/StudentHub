@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #d946ef;
+  --secondary-color: #0369a1;
+  --light-color: #0ea5e9;
+  --box-color: #e0f2fe;
+  --card-heading-color: #1e293b;
+  --primary-color-dark: #531c59;
+  --primary-color-light: rgba(106, 50, 113, 0.8);
+}
+.first-page {
+  background-image: url(../edotask/events/copy2.jpg);
+  background-position: bottom;
+  background-size: cover;
+  height: 160px;
+}
+.first-page h2 {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-size: 500;
+}
+.first-page h1 {
+  color: var(--secondary-color);
+  font-size: 48px;
+  font-weight: 700;
+}
+.my-btn {
+  border-width: 1px !important;
+  border-color: black !important;
+  color: black !important;
+}
+.my-container {
+  width: 28rem;
+  height: 20rem;
+  background-color: var(--box-color);
+  border-radius: 10px;
+}
+#image {
+  width: 307px;
+  height: 150px;
+  box-shadow: 1px 2px 8px black;
+}
+.card-header {
+  color: var(--card-heading-color);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.card-description {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 20px;
+  text-align: left;
+  line-height: 15px;
+  margin-top: 5px;
+}
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  height: 2rem;
+  width: 7rem;
+  border-radius: 5px;
+  padding: 3px;
+  text-align: center;
+}
+.second-button {
+  background-color: var(--light-color);
+  color: white;
+  text-decoration: none;
+  height: 2rem;
+  width: 7rem;
+  border-radius: 5px;
+  padding: 3px;
+  text-align: center;
+}
+
+/* VIRTUAL EVENTS - PHYSICAL EVENTS */
+#left-arrow {
+  font-size: 60px;
+  margin-left: 6.3rem;
+}
+#virtual-container {
+  background-color: var(--primary-color);
+  width: 200rem;
+  height: 6rem;
+  border-radius: 15px;
+}
+#physical-container {
+  background-color: var(--box-color);
+  width: 200rem;
+  height: 6rem;
+  border-radius: 15px;
+}
+.little-info {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 20px;
+  margin-top: 0px;
+}
+.bordered {
+  margin-left: 7rem;
+  border-width: 1px;
+  border-color: black;
+  padding: 5px;
+  margin-top: 2rem;
+  border-radius: 5px;
+  width: 130px;
+  background-color: white;
+}
+.image-card {
+  width: 360px;
+  height: 330px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0px 1px 6px 1px black;
+  border-radius: 10px;
+  margin-top: 4rem;
+}
+#card-name {
+  text-align: left;
+  margin-top: 1.5rem;
+  font-size: 32px;
+  color: var(--card-heading-color);
+  font-weight: bolder;
+}
+.description {
+  text-align: left;
+  font-size: 14px;
+}
+.extra-header {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+#little-header {
+  line-height: 15px;
+  font-size: 14px;
+  vertical-align: top;
+}
+#location {
+  font-size: 28px;
+  vertical-align: top;
+}
+
+.register {
+  background-color: var(--light-color);
+  color: white;
+  text-decoration: none;
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 5px;
+  padding: 4px;
+  text-align: center;
+  display: block;
+  font-size: 18px;
+}
